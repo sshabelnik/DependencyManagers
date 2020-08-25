@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-DependencyManagers/Pods-DependencyManagers-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/Pulley/Pulley.framework
+${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
