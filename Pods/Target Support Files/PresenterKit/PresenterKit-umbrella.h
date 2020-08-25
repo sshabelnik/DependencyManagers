@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double PulleyVersionNumber;
-FOUNDATION_EXPORT const unsigned char PulleyVersionString[];
+FOUNDATION_EXPORT double PresenterKitVersionNumber;
+FOUNDATION_EXPORT const unsigned char PresenterKitVersionString[];
 

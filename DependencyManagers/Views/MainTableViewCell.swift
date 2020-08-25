@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class MainTableViewCell: UITableViewCell {
 
@@ -29,6 +30,7 @@ class MainTableViewCell: UITableViewCell {
     func setup(for character: CharacterObject){
         nameLabel.text = character.name
         homeworldLabel.text = character.homeworld
+        selfieImageView.sd_setImage(with: URL(string: character.image), placeholderImage: UIImage(named: "\(character.name).jpg"))
     }
     
     

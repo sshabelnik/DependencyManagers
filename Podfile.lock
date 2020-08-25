@@ -1,26 +1,26 @@
 PODS:
   - Alamofire (5.2.2)
-  - Pulley (2.8.1)
+  - PresenterKit (6.1.0)
   - SDWebImage (5.8.4):
     - SDWebImage/Core (= 5.8.4)
   - SDWebImage/Core (5.8.4)
 
 DEPENDENCIES:
   - Alamofire (~> 5.2)
-  - Pulley
+  - PresenterKit (~> 6.1.0)
   - SDWebImage (~> 5.0)
 
 SPEC REPOS:
   trunk:
     - Alamofire
-    - Pulley
+    - PresenterKit
     - SDWebImage
 
 SPEC CHECKSUMS:
   Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
-  Pulley: 8caac123d8e2f0887fec7ae0370f5fba0a1df949
+  PresenterKit: ae7f56f7ce21227c80e151e4374618a4ef676d5f
   SDWebImage: cf6922231e95550934da2ada0f20f2becf2ceba9
 
-PODFILE CHECKSUM: c37ef46f9261476fdb73be7dbe06f1e2704e7e33
+PODFILE CHECKSUM: e363f220d1ebf70d023eb2209b94d2367f5c50d0
 
 COCOAPODS: 1.9.3

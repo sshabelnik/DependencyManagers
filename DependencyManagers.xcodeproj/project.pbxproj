@@ -18,6 +18,8 @@
 		A9D560C424F3C71100D0D3D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9D560C224F3C71100D0D3D6 /* LaunchScreen.storyboard */; };
 		A9D560CC24F3C73500D0D3D6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D560CB24F3C73500D0D3D6 /* NetworkManager.swift */; };
 		A9D560D524F437F900D0D3D6 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D560D424F437F900D0D3D6 /* Character.swift */; };
+		A9D8190124F502DA0087D279 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D818FF24F502DA0087D279 /* DetailViewController.swift */; };
+		A9D8190224F502DA0087D279 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9D8190024F502DA0087D279 /* DetailViewController.xib */; };
 		BF95F4600151C184E5F6C0B7 /* Pods_DependencyManagers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4EA409AF08D3CAA358F3A8 /* Pods_DependencyManagers.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +39,8 @@
 		A9D560C524F3C71100D0D3D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9D560CB24F3C73500D0D3D6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		A9D560D424F437F900D0D3D6 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		A9D818FF24F502DA0087D279 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		A9D8190024F502DA0087D279 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		DE4EA409AF08D3CAA358F3A8 /* Pods_DependencyManagers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DependencyManagers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -81,6 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				A9D560B824F3C70C00D0D3D6 /* ViewController.swift */,
+				A9D818FF24F502DA0087D279 /* DetailViewController.swift */,
+				A9D8190024F502DA0087D279 /* DetailViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -201,6 +207,7 @@
 				A9D560C424F3C71100D0D3D6 /* LaunchScreen.storyboard in Resources */,
 				A9D560C124F3C71100D0D3D6 /* Assets.xcassets in Resources */,
 				A9D560BC24F3C70C00D0D3D6 /* Main.storyboard in Resources */,
+				A9D8190224F502DA0087D279 /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9D8190124F502DA0087D279 /* DetailViewController.swift in Sources */,
 				A9D560BF24F3C70D00D0D3D6 /* DependencyManagers.xcdatamodeld in Sources */,
 				A9D560B924F3C70C00D0D3D6 /* ViewController.swift in Sources */,
 				A9D560CC24F3C73500D0D3D6 /* NetworkManager.swift in Sources */,

@@ -8,10 +8,12 @@
 
 import UIKit
 import Alamofire
+import PresenterKit
 
 class ViewController: UIViewController {
     
     var items: [CharacterObject] = []
+    var selectedItem: CharacterObject!
     
     @IBOutlet var tableView: UITableView!
     
@@ -26,8 +28,6 @@ class ViewController: UIViewController {
         
         //NetworkManager.shared.fetchCharacters()
     }
-
-
 }
 
 // MARK: - TableView
@@ -48,6 +48,16 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedItem = items[indexPath.row]
+        
+        let cell = tableView.cellForRow(at: indexPath)!.contentView
+        let config = PopoverConfig(source: .view(container: cell, frame: nil), delegate: self)
+        let vc = DetailViewController()
+        vc.selectedItem = self.selectedItem
+        presentController(vc, type: .popover(config), animated: true)
     }
 }
 
@@ -71,4 +81,14 @@ extension ViewController{
         }
     }
 }
+
+// MARK: UIPopoverPresentationControllerDelegate
+
+extension ViewController: UIPopoverPresentationControllerDelegate{
+    
+    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        .none
+    }
+}
+
 

@@ -8,6 +8,6 @@ target 'DependencyManagers' do
   # Pods for DependencyManagers
   pod 'Alamofire', '~> 5.2'
   pod 'SDWebImage', '~> 5.0'
-  pod 'Pulley'
+  pod 'PresenterKit', '~> 6.1.0'
 
 end
