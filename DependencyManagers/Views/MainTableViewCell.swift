@@ -17,9 +17,7 @@ class MainTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
         selfieImageView.layer.cornerRadius = selfieImageView.frame.height / 2
-        
     }
 
     

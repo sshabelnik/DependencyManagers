@@ -39,7 +39,6 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! MainTableViewCell
-        
         cell.setup(for: items[indexPath.row])
         return cell
         
@@ -55,6 +54,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
         let vc = DetailViewController()
         vc.setup(for: selectedItem)
         presentController(vc, type: .showDetail(.withNavigation), animated: true)
+        tableView.cellForRow(at: indexPath)?.isSelected = false
     }
 }
 
