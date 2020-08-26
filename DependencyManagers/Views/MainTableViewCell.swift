@@ -17,7 +17,9 @@ class MainTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        selfieImageView.layer.cornerRadius = selfieImageView.frame.height / 2
+        
     }
 
     
@@ -27,12 +29,9 @@ class MainTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setup(for character: CharacterObject){
-        nameLabel.text = character.name
-        homeworldLabel.text = character.homeworld
-        selfieImageView.sd_setImage(with: URL(string: character.image), placeholderImage: UIImage(named: "\(character.name).jpg"))
+    func setup(for character: Displayable){
+        nameLabel.text = character.titleLabelText
+        homeworldLabel.text = character.subtitleLabelText
+        selfieImageView.sd_setImage(with: character.imageURL, placeholderImage: UIImage(named: "\(character.titleLabelText)"))
     }
-    
-    
-
 }

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A947DCD824F43AEC0036989A /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A947DCD724F43AEC0036989A /* MainTableViewCell.swift */; };
 		A947DCDE24F44DC20036989A /* CharacterObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A947DCDD24F44DC20036989A /* CharacterObject.swift */; };
+		A9CA01E324F66D6D00834CEE /* Displayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CA01E224F66D6D00834CEE /* Displayable.swift */; };
 		A9D560B524F3C70C00D0D3D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D560B424F3C70C00D0D3D6 /* AppDelegate.swift */; };
 		A9D560B724F3C70C00D0D3D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D560B624F3C70C00D0D3D6 /* SceneDelegate.swift */; };
 		A9D560B924F3C70C00D0D3D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D560B824F3C70C00D0D3D6 /* ViewController.swift */; };
@@ -28,6 +29,7 @@
 		7E7B5D2FB2FCFB12A4308FF9 /* Pods-DependencyManagers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DependencyManagers.debug.xcconfig"; path = "Target Support Files/Pods-DependencyManagers/Pods-DependencyManagers.debug.xcconfig"; sourceTree = "<group>"; };
 		A947DCD724F43AEC0036989A /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		A947DCDD24F44DC20036989A /* CharacterObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterObject.swift; sourceTree = "<group>"; };
+		A9CA01E224F66D6D00834CEE /* Displayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Displayable.swift; sourceTree = "<group>"; };
 		A9D560B124F3C70C00D0D3D6 /* DependencyManagers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DependencyManagers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9D560B424F3C70C00D0D3D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9D560B624F3C70C00D0D3D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,11 +86,19 @@
 		A947DCDA24F43B110036989A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				A9D560B824F3C70C00D0D3D6 /* ViewController.swift */,
-				A9D818FF24F502DA0087D279 /* DetailViewController.swift */,
-				A9D8190024F502DA0087D279 /* DetailViewController.xib */,
+				A9CA01E424F675A900834CEE /* MainVC */,
+				A9EE081124F53E1400059CCD /* DetailVC */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A9CA01E424F675A900834CEE /* MainVC */ = {
+			isa = PBXGroup;
+			children = (
+				A9D560BA24F3C70C00D0D3D6 /* Main.storyboard */,
+				A9D560B824F3C70C00D0D3D6 /* ViewController.swift */,
+			);
+			path = MainVC;
 			sourceTree = "<group>";
 		};
 		A9D560A824F3C70C00D0D3D6 = {
@@ -118,7 +128,6 @@
 				A9D560CD24F3C73A00D0D3D6 /* Services */,
 				A9D560B424F3C70C00D0D3D6 /* AppDelegate.swift */,
 				A9D560B624F3C70C00D0D3D6 /* SceneDelegate.swift */,
-				A9D560BA24F3C70C00D0D3D6 /* Main.storyboard */,
 				A9D560C024F3C71100D0D3D6 /* Assets.xcassets */,
 				A9D560C224F3C71100D0D3D6 /* LaunchScreen.storyboard */,
 				A9D560C524F3C71100D0D3D6 /* Info.plist */,
@@ -140,8 +149,18 @@
 			children = (
 				A9D560D424F437F900D0D3D6 /* Character.swift */,
 				A947DCDD24F44DC20036989A /* CharacterObject.swift */,
+				A9CA01E224F66D6D00834CEE /* Displayable.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		A9EE081124F53E1400059CCD /* DetailVC */ = {
+			isa = PBXGroup;
+			children = (
+				A9D818FF24F502DA0087D279 /* DetailViewController.swift */,
+				A9D8190024F502DA0087D279 /* DetailViewController.xib */,
+			);
+			path = DetailVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +287,7 @@
 				A947DCDE24F44DC20036989A /* CharacterObject.swift in Sources */,
 				A9D560D524F437F900D0D3D6 /* Character.swift in Sources */,
 				A9D560B524F3C70C00D0D3D6 /* AppDelegate.swift in Sources */,
+				A9CA01E324F66D6D00834CEE /* Displayable.swift in Sources */,
 				A9D560B724F3C70C00D0D3D6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

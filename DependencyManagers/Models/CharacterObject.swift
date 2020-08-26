@@ -10,12 +10,37 @@ import Foundation
 
 struct CharacterObject{
     
-    let name: String
-    let homeworld: String
-    let image: String
-    let height: Double
-    let gender: String
-    let eyeColor: String
-    let skinColor: String
+    internal let name: String
+    internal let homeworld: String
+    internal let image: String
+    internal let height: Double
+    internal let gender: String
+    internal let eyeColor: String
+    internal let skinColor: String
     
+}
+
+extension CharacterObject: Displayable{
+    
+    var titleLabelText: String {
+        return name
+    }
+    var subtitleLabelText: String {
+        return "HOMEWORLD: \(homeworld)"
+    }
+    var imageURL: URL {
+        return URL(string: image)!
+    }
+    var heightLabelText: String {
+        return String("HEIGHT: \(height) m.")
+    }
+    var genderLabelText: String {
+        return "GENDER: \(gender)"
+    }
+    var eyeColorLabelText: String {
+        return "EYECOLOR: \(eyeColor)"
+    }
+    var skinColorLabelText: String {
+        return "SKINCOLOR: \(skinColor)"
+    }
 }
